@@ -10,4 +10,5 @@ import UIKit
 
 class CellCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var image: UIImageView!
 }

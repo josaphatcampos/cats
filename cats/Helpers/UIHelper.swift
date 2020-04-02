@@ -11,6 +11,21 @@ import UIKit
 import SystemConfiguration
 
 class UIHelper{
+    
+    static func showAlertController(uiController: UIViewController, message: String, title: String =  "Informação"){
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        
+        let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default)
+        {
+            (result : UIAlertAction) -> Void in
+        }
+        alertController.addAction(okAction)
+        uiController.present(alertController, animated: true, completion: nil)
+        alertController.view.tintColor = UIColor.red
+        alertController.view.backgroundColor = UIColor.red
+        alertController.view.layer.cornerRadius = 0.1 * alertController.view.bounds.size.width
+    }
+    
     static func activityIndicator(view: UIView, title: String) -> UIView {
         var strLabel = UILabel()
         var activityIndicator = UIActivityIndicatorView()
