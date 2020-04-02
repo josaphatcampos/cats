@@ -9,7 +9,7 @@ Projeto em **Swift** de consultar em **API** .
 
 ## Instalando o CocoaPods
 
-Para o download das dependência você deve instalar o CocoaPods
+Para o download das dependências você deve instalar o CocoaPods
 
 [CocoaPods](http://cocoapods.org/) é um gerenciador de dependência. Você pode instalá-lo com o seguinte comando:
 
